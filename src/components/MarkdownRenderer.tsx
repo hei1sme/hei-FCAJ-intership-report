@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import { Link } from 'react-router-dom';
 
 interface MarkdownRendererProps {
@@ -10,6 +11,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
     return (
         <ReactMarkdown
             remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
             components={{
                 // Headings with proper styling
                 h1: ({ children }) => (
@@ -62,21 +64,25 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
                 },
 
                 // Unordered lists
-                ul: ({ children }) => (
-                    <ul className="list-disc list-inside space-y-2 mb-6 text-text-secondary ml-4">
-                        {children}
-                    </ul>
-                ),
+                ul: ({ children, ...props }) => {
+                    // Check if this is a nested list by looking at the depth
+                    const isNested = props.node?.position?.start?.column && props.node.position.start.column > 1;
+                    return (
+                        <ul className={`space-y-2 mb-4 text-text-secondary pl-6 ${isNested ? 'list-[circle] mt-2' : 'list-disc'}`}>
+                            {children}
+                        </ul>
+                    );
+                },
 
                 // Ordered lists
                 ol: ({ children }) => (
-                    <ol className="list-decimal list-inside space-y-2 mb-6 text-text-secondary ml-4">
+                    <ol className="list-decimal space-y-2 mb-4 text-text-secondary pl-6">
                         {children}
                     </ol>
                 ),
 
                 // List items
-                li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+                li: ({ children }) => <li className="leading-relaxed pl-1">{children}</li>,
 
                 // Horizontal rule
                 hr: () => <hr className="my-8 border-gray-200" />,
