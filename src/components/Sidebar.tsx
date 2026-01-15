@@ -372,7 +372,7 @@ export function Sidebar() {
                     <div className="px-7 pb-5 pt-1">
                         <div className="text-[10px] font-medium text-gray-600 flex justify-between tracking-wide">
                             <span>LAST UPDATED</span>
-                            <span className="text-gray-500">09/01/2026</span>
+                            <span className="text-gray-500">{__BUILD_DATE__}</span>
                         </div>
                     </div>
                 </div>
