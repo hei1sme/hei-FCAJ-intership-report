@@ -4,7 +4,7 @@
 
 **Phone Number:** 0394282851
 
-**Email:** heiontheway@gmail.com
+**Email:** <heiontheway@gmail.com>
 
 **University:** FPT University HCMC
 
@@ -12,6 +12,6 @@
 
 **Internship Company:** Amazon Web Services Vietnam
 
-**Internship Position:** Supervisor & AI Engineer - Team NeuraX
+**Internship Position:** FCAJ Cloud Intern
 
 **Internship Duration:** From 05/01/2026 to 05/04/2026

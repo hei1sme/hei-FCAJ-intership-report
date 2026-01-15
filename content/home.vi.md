@@ -4,7 +4,7 @@
 
 **Số Điện Thoại:** 0394282851
 
-**Email:** heiontheway@gmail.com
+**Email:** <heiontheway@gmail.com>
 
 **Trường:** FPT University HCMC
 
@@ -12,6 +12,6 @@
 
 **Công Ty Thực Tập:** Amazon Web Services Vietnam
 
-**Vị Trí Thực Tập:** Supervisor & AI Engineer - Team NeuraX
+**Vị Trí Thực Tập:** FCAJ Cloud Intern
 
 **Thời Gian Thực Tập:** Từ 05/01/2026 đến 05/04/2026
