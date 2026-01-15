@@ -2,11 +2,11 @@
 
 **Full Name:** Le Nguyen Gia Hung
 
-**Phone Number:** 0394282851
+**Phone Number:** 0394262651
 
 **Email:** <heiontheway@gmail.com>
 
-**University:** FPT University HCMC
+**University:** FPT University
 
 **Major:** Artificial Intelligence
 

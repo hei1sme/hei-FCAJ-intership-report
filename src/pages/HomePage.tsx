@@ -68,7 +68,7 @@ export function HomePage() {
                         <div className="w-full lg:w-1/3 flex-shrink-0">
                             <div className="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-accent-orange/30 transition-transform hover:scale-[1.01] duration-300">
                                 <img
-                                    src={`${import.meta.env.BASE_URL}LNGH_AWS.png`}
+                                    src={`${import.meta.env.BASE_URL}LNGH_AWS.jpg`}
                                     alt={profile.name}
                                     className="w-full h-full object-cover"
                                 />

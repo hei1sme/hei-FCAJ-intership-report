@@ -1,14 +1,14 @@
 # Thông Tin Sinh Viên
 
-**Họ Tên:** Le Nguyen Gia Hung
+**Họ Tên:** Lê Nguyễn Gia Hưng
 
-**Số Điện Thoại:** 0394282851
+**Số Điện Thoại:** 0394262651
 
 **Email:** <heiontheway@gmail.com>
 
-**Trường:** FPT University HCMC
+**Trường:** Đại học FPT
 
-**Ngành:** Artificial Intelligence
+**Ngành:** Trí Tuệ Nhân Tạo
 
 **Công Ty Thực Tập:** Amazon Web Services Vietnam
 
