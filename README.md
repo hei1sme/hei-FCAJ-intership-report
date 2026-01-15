@@ -1,13 +1,13 @@
+<div align="center">
+
 # FCJ Internship Report - First Cloud AI Journey ☁️
 
-<div align="center">
+![Project Banner](public/FCJ-logo.png)
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-007ACC?style=for-the-badge&logo=TypeScript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6.0-BD34FE?style=for-the-badge&logo=Vite&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
-
-![Project Banner](public/FCJ-logo.png)
 
 **📍 Live Demo: [View Report](https://hei1sme.github.io/hei-FCAJ-intership-report/)**
 
