@@ -803,14 +803,14 @@ Sử dụng AWS Free Tier khi có thể. Chi phí ước tính cho workload prod
 * Lên công ty làm quen môi trường làm việc thực tế và gặp gỡ team.\r
 * Mục tiêu chính: Chốt được ý tưởng dự án chính thức trong Week 2.\r
 * Bắt đầu phác thảo Proposal nếu đã chốt được idea.\r
-`,Z6=`### Week 2 Objectives:\r
+`,Z6=`### Week 2 Objectives\r
 \r
 * Complete Week 1 of "AWS Cloud Fundamentals" course on Coursera.\r
 * Practice 5 basic Labs (Bedrock, RDS, Lambda, Budgets, EC2).\r
 * Deep dive into IAM and VPC (Networking & Security).\r
 * Participate in AWS x FCAJ uniform shirt collection activity.\r
 \r
-### Tasks to be carried out this week:\r
+### Tasks to be carried out this week\r
 \r
 | Day | Task | Start Date | Completion Date | Reference Material |\r
 | --- | --- | --- | --- | --- |\r
@@ -820,9 +820,9 @@ Sử dụng AWS Free Tier khi có thể. Chi phí ước tính cho workload prod
 | 3 | - Administrative & Team Bonding <br>&emsp; + Day off (Self-study) <br>&emsp; + Collected AWS x FCAJ Shirt <br>&emsp; + Networking with other teams | 14/01/2026 | 14/01/2026 | [Photo] |\r
 | 4 | - Deep Dive: Amazon VPC <br>&emsp; + Study Subnets, Route Tables, Internet Gateway <br>&emsp; + Understanding Public vs Private Subnets | 15/01/2026 | 15/01/2026 | [Architecture Draft] |\r
 | 4 | - Coursera Certification <br>&emsp; + Completed Week 1: AWS Cloud Fundamentals <br>&emsp; + Passed Quiz | 15/01/2026 | 15/01/2026 | [Certificate / Badge] |\r
-| 5-7 | - Self-Review & Plan Week 3 <br>&emsp; + Reviewed all labs <br>&emsp; + Updated Personal Report Website (Hugo) | 16/01/2026 | 18/01/2026 | [Web Link] |\r
+| 5-7 | - Self-Review & Plan Week 3 <br>&emsp; + Reviewed all labs <br>&emsp; + Updated Personal Report Website | 16/01/2026 | 18/01/2026 | [Web Link] |\r
 \r
-### Week 2 Achievements:\r
+### Week 2 Achievements\r
 \r
 * Hands-on Skills:\r
   * Learned to initialize and manage 5 core services: **EC2** (Compute), **RDS** (Database), **Lambda** (Serverless), **Bedrock** (AI), **Budgets** (Cost).\r
@@ -835,20 +835,20 @@ Sử dụng AWS Free Tier khi có thể. Chi phí ước tính cho workload prod
 * Extracurricular Activities:\r
   * Received uniform shirt, officially integrated into FCJ culture.\r
 \r
-### Challenges & Lessons:\r
+### Challenges & Lessons\r
 \r
-* **Challenges:** \r
+* **Challenges:**\r
   * VPC concepts (Subnet, CIDR block) are quite abstract and difficult to visualize packet flow.\r
   * RDS Lab took longer than expected provisioning time.\r
 \r
-* **Solutions:** \r
+* **Solutions:**\r
   * Redrew network diagrams on paper for better understanding.\r
   * Read theory documentation while waiting for RDS to provision.\r
 \r
-* **Lessons Learned:** \r
+* **Lessons Learned:**\r
   * Networking is core: Without understanding VPC, connecting services is impossible (e.g., Lambda cannot call RDS). Need to spend more time on this.\r
 \r
-### Next Week Plan:\r
+### Next Week Plan\r
 \r
 * Focus: Finalize Idea Proposal "NeuraX Knowledge Vault" (Secure-RAG).\r
 * Technical: Deep dive into **Amazon Bedrock Knowledge Base** (for RAG project).\r
@@ -870,7 +870,7 @@ Sử dụng AWS Free Tier khi có thể. Chi phí ước tính cho workload prod
 | 3 | - Hoạt động hành chính & Team Bonding <br>&emsp; + Ngày nghỉ (Tự học) <br>&emsp; + Nhận áo AWS x FCAJ <br>&emsp; + Networking với các team khác | 14/01/2026 | 14/01/2026 | [Photo] |\r
 | 4 | - Deep Dive: Amazon VPC <br>&emsp; + Nghiên cứu Subnets, Route Tables, Internet Gateway <br>&emsp; + Hiểu Public vs Private Subnets | 15/01/2026 | 15/01/2026 | [Architecture Draft] |\r
 | 4 | - Chứng chỉ Coursera <br>&emsp; + Hoàn thành Week 1: AWS Cloud Fundamentals <br>&emsp; + Đạt Quiz | 15/01/2026 | 15/01/2026 | [Certificate / Badge] |\r
-| 5-7 | - Tự đánh giá & Lên kế hoạch Tuần 3 <br>&emsp; + Ôn tập lại tất cả các labs <br>&emsp; + Cập nhật Website báo cáo cá nhân (Hugo) | 16/01/2026 | 18/01/2026 | [Web Link] |\r
+| 5-7 | - Tự đánh giá & Lên kế hoạch Tuần 3 <br>&emsp; + Ôn tập lại tất cả các labs <br>&emsp; + Cập nhật Website báo cáo cá nhân | 16/01/2026 | 18/01/2026 | [Web Link] |\r
 \r
 ### Thành tựu Tuần 2\r
 \r
