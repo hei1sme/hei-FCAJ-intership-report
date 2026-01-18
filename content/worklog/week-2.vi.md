@@ -15,7 +15,7 @@
 | 3 | - Hoạt động hành chính & Team Bonding <br>&emsp; + Ngày nghỉ (Tự học) <br>&emsp; + Nhận áo AWS x FCAJ <br>&emsp; + Networking với các team khác | 14/01/2026 | 14/01/2026 | [Photo] |
 | 4 | - Deep Dive: Amazon VPC <br>&emsp; + Nghiên cứu Subnets, Route Tables, Internet Gateway <br>&emsp; + Hiểu Public vs Private Subnets | 15/01/2026 | 15/01/2026 | [Architecture Draft] |
 | 4 | - Chứng chỉ Coursera <br>&emsp; + Hoàn thành Week 1: AWS Cloud Fundamentals <br>&emsp; + Đạt Quiz | 15/01/2026 | 15/01/2026 | [Certificate / Badge] |
-| 5-7 | - Tự đánh giá & Lên kế hoạch Tuần 3 <br>&emsp; + Ôn tập lại tất cả các labs <br>&emsp; + Cập nhật Website báo cáo cá nhân (Hugo) | 16/01/2026 | 18/01/2026 | [Web Link] |
+| 5-7 | - Tự đánh giá & Lên kế hoạch Tuần 3 <br>&emsp; + Ôn tập lại tất cả các labs <br>&emsp; + Cập nhật Website báo cáo cá nhân | 16/01/2026 | 18/01/2026 | [Web Link] |
 
 ### Thành tựu Tuần 2
 
