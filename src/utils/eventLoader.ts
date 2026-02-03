@@ -26,7 +26,7 @@ export function loadEvents(language: 'en' | 'vi'): EventData[] {
 
     for (const path of relevantPaths) {
         const rawContent = eventModules[path] as string;
-        const event = parseEventMarkdown(rawContent, language);
+        const event = parseEventMarkdown(rawContent);
         // Use filename as ID (e.g., "01-aws-community-day")
         const id = path.split('/').pop()?.replace(`.${language}.md`, '') || 'unknown';
 
@@ -36,7 +36,7 @@ export function loadEvents(language: 'en' | 'vi'): EventData[] {
     return events;
 }
 
-function parseEventMarkdown(content: string, language: 'en' | 'vi'): Omit<EventData, 'id'> {
+function parseEventMarkdown(content: string): Omit<EventData, 'id'> {
     const lines = content.split('\n');
     let title = '';
     let date = '';
