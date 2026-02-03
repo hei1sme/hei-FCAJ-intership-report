@@ -4,6 +4,7 @@ import { Calendar, MapPin, User } from 'lucide-react';
 import { AnimatedPage } from '../components/AnimatedPage';
 import { SectionHeader } from '../components/SectionHeader';
 import { loadEvents } from '../utils/eventLoader';
+import ReactMarkdown from 'react-markdown';
 
 export function EventsPage() {
     const { language } = useLanguage();
@@ -12,8 +13,15 @@ export function EventsPage() {
     const events = loadEvents(language);
 
     const formatDate = (dateStr: string) => {
+        if (!dateStr) return language === 'en' ? 'Invalid Date' : 'Ngày không hợp lệ';
+
         try {
+            // Try to parse the date string
             const date = new Date(dateStr);
+            if (isNaN(date.getTime())) {
+                // If parsing fails, return the original string
+                return dateStr;
+            }
             return date.toLocaleDateString(language === 'en' ? 'en-US' : 'vi-VN', {
                 year: 'numeric',
                 month: 'long',
@@ -49,7 +57,7 @@ export function EventsPage() {
                                             <td className="font-medium w-32 bg-gray-50">
                                                 <div className="flex items-center gap-2">
                                                     <Calendar size={16} className="text-accent-orange" />
-                                                    {language === 'en' ? 'Time' : 'Thời gian'}
+                                                    {language === 'en' ? 'Date & Time' : 'Ngày & Giờ'}
                                                 </div>
                                             </td>
                                             <td>{formatDate(event.date)}</td>
@@ -61,7 +69,7 @@ export function EventsPage() {
                                                     {language === 'en' ? 'Location' : 'Địa điểm'}
                                                 </div>
                                             </td>
-                                            <td>{event.location}</td>
+                                            <td>{event.location || (language === 'en' ? 'N/A' : 'Không có')}</td>
                                         </tr>
                                         <tr>
                                             <td className="font-medium bg-gray-50">
@@ -70,33 +78,49 @@ export function EventsPage() {
                                                     {language === 'en' ? 'Role' : 'Vai trò'}
                                                 </div>
                                             </td>
-                                            <td>{event.role}</td>
+                                            <td>{event.role || (language === 'en' ? 'Attendee' : 'Người tham dự')}</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            {/* Main Content */}
-                            <div className="mb-4">
-                                <h3 className="font-semibold text-text-primary mb-2">
-                                    {language === 'en' ? 'Main Content' : 'Nội dung chính'}
-                                </h3>
-                                <div className="text-text-secondary whitespace-pre-line">
-                                    {event.content}
+                            {/* Event Description */}
+                            {event.description && (
+                                <div className="mb-4">
+                                    <h3 className="font-semibold text-text-primary mb-2">
+                                        {language === 'en' ? 'Event Description' : 'Mô tả sự kiện'}
+                                    </h3>
+                                    <div className="text-text-secondary prose prose-sm max-w-none">
+                                        <ReactMarkdown>{event.description}</ReactMarkdown>
+                                    </div>
                                 </div>
-                            </div>
+                            )}
 
-                            {/* Key Takeaways */}
-                            <div>
-                                <h3 className="font-semibold text-text-primary mb-2">
-                                    {language === 'en' ? 'Key Takeaways / Personal Contributions' : 'Bài học / Đóng góp cá nhân'}
-                                </h3>
-                                <ul className="list-disc list-inside space-y-1 text-text-secondary">
-                                    {event.takeaways.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
+                            {/* Main Activities */}
+                            {event.activities && (
+                                <div className="mb-4">
+                                    <h3 className="font-semibold text-text-primary mb-2">
+                                        {language === 'en' ? 'Main Activities' : 'Các hoạt động chính'}
+                                    </h3>
+                                    <div className="text-text-secondary prose prose-sm max-w-none">
+                                        <ReactMarkdown>{event.activities}</ReactMarkdown>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Outcomes / Value Gained */}
+                            {event.outcomes && event.outcomes.length > 0 && (
+                                <div>
+                                    <h3 className="font-semibold text-text-primary mb-2">
+                                        {language === 'en' ? 'Outcomes / Value Gained' : 'Kết quả / Giá trị thu được'}
+                                    </h3>
+                                    <ul className="list-disc list-inside space-y-1 text-text-secondary">
+                                        {event.outcomes.map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
